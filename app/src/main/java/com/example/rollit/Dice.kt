@@ -7,7 +7,7 @@ class Dice (val numSides: Int = 6){
         if(isRangesRandom){
             return (1..numSides).random()
         }else{
-            return Random().nextInt(NumSides) + 1
+            return Random().nextInt(this.numSides) + 1
         }
     }
 }
